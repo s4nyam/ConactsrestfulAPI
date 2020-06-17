@@ -15,11 +15,9 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb://heroku_2t2gdhpl:q1i1mn6s3ivm3ktq837aoo8cvf@ds021299.mlab.com:21299/heroku_2t2gdhpl', { useNewUrlParser: true});
-// mongoose.connect('mongodb://localhost/resthub', { useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/resthub', { useNewUrlParser: true});
 
 // Heroku Mongoose connection
-// mongoose.connect('mongodb://heroku_2t2gdhpl:admin99@ds349857.mlab.com:49857/heroku_2t2gdhpl', { useNewUrlParser: true });
 
 var db = mongoose.connection;
 
